@@ -1,13 +1,31 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html::before  {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 0.5em;
+    background-color: hsl(198, 58%, 53%);
+}
+html  {
+    /* 
+        Gradient modified from original at
+        https://www.eggradients.com/category/blue-gradient?83ff460c_page=6 
+    */
+    background-color: hsl(12, 75%, 15%);
+    background-image: linear-gradient(315deg, hsl(12, 75%, 15%) 0%, hsl(328, 47%, 13%) 37%, hsl(198, 58%, 13%) 100%);
+}
+html > *  {
+    background-color: transparent;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

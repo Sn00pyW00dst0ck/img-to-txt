@@ -1,6 +1,35 @@
+.TextDisplayContainer  {
+    /* Gradient from https://www.eggradients.com/category/blue-gradient?83ff460c_page=6 */
+    background-color: hsl(12, 75%, 55%);
+    background-image: linear-gradient(315deg, hsl(12, 75%, 55%) 0%, hsl(328, 47%, 53%) 37%, hsl(198, 58%, 53%) 100%);
+
+    padding: 0.5em;
+    margin: 9.5vh 4.5vw;
+
+    display: inline-block;
+    width: 90vw;
+    max-width: 90vw;
+    max-height: 80vh;
+}
+
+.TextDisplayContent  {
+    background-color: var(--darkColor);
+    box-sizing: border-box;
+    padding: 1.5em;
+
+    max-height: 80vh;
+    overflow: scroll;
+
+    /* Hide Scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 .TextDisplay  {
+    background-color: var(--lightColor);
     white-space: pre;
-    font-size: 2px;
+    width: fit-content;
+    font-size: 0.5px;
     font-family: Courier;
-    line-height: 2px;
+    line-height: 0.5px;
 }

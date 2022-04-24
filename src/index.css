@@ -25,6 +25,13 @@ html  {
 html > *  {
     background-color: transparent;
 }
+html::after  {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 0.5em;
+    background-color: hsl(12, 75%, 55%);
+}
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;

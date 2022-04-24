@@ -37,7 +37,11 @@ const ImgTextCreator = (props) =>  {
 
     return (
         <>
-            <p className={styles.TextDisplay}>{text}</p>
+            <div className={styles.TextDisplayContainer}>
+                <div className={styles.TextDisplayContent}>
+                    <p className={styles.TextDisplay}>{text}</p>
+                </div>
+            </div>
         </>
     );
 }

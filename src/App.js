@@ -72,6 +72,7 @@ function App() {
             <canvas id="HiddenCanvas" style={{display: "none"}}></canvas>
 
             {/* Title Here */}
+            <h1>Image To Text</h1>
 
             <ImgUploader onSelectImageHandler={setSelectedImage}/>
 

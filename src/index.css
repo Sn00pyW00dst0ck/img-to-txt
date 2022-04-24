@@ -5,11 +5,13 @@ body {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    min-height: calc(100vh - 1em);
 }
 
 html::before  {
     content: '';
-    position: absolute;
+    display: block;
     width: 100vw;
     height: 0.5em;
     background-color: hsl(198, 58%, 53%);
@@ -21,18 +23,43 @@ html  {
     */
     background-color: hsl(12, 75%, 15%);
     background-image: linear-gradient(315deg, hsl(12, 75%, 15%) 0%, hsl(328, 47%, 13%) 37%, hsl(198, 58%, 13%) 100%);
+
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+    /* Hide Scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+html::-webkit-scrollbar  {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    display: none;
 }
 html > *  {
     background-color: transparent;
 }
 html::after  {
     content: '';
-    position: absolute;
+
+    display: block;
+
     width: 100vw;
     height: 0.5em;
+
     background-color: hsl(12, 75%, 55%);
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+body  {
+    width: 100vw;
+    min-height: calc(100vh - 1em);
+}
+
+h1  {
+    color: var(--lightColor);
+    padding: 0;
+    margin: 0;
 }

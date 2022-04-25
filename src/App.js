@@ -18,6 +18,8 @@ function App() {
 
             {/* Title Here */}
             <h1>Image To Text</h1>
+            <h2>Upload an image to have it converted to ASCII characters</h2>
+            <p>An application by Gabriel Aldous</p>
 
             <ImgUploader onSelectImageHandler={setSelectedImage}/>
 

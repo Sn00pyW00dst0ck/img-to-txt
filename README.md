@@ -1,4 +1,4 @@
-# JS To ES6 Converter #
+# Image To Text #
 **Build Status: `In Progress`**
 
 ## By Gabriel Aldous

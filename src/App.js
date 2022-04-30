@@ -1,4 +1,4 @@
-import './App.css';
+import styles from './App.module.css';
 import { useState } from 'react';
 import ImgTextCreator from './components/ImgTextCreator';
 import ImgUploader from './components/ImgUploader';
@@ -13,13 +13,15 @@ function App() {
     const { imageDimensions, pixelData } = useImageData(selectedImage);
 
     return (
-        <div className="App">
+        <div className={styles.App}>
             <canvas id="HiddenCanvas" style={{display: "none"}}></canvas>
 
             {/* Title Here */}
-            <h1>Image To Text</h1>
-            <h2>Upload an image to have it converted to ASCII characters</h2>
-            <p>An application by Gabriel Aldous</p>
+            <h1 className={styles.App_Title}>
+                Image To <span className={styles.monospace}>Text</span>
+            </h1>
+            <h2 className={styles.App_Subtitle}>Upload an image to have it converted to ASCII characters</h2>
+            <p className={styles.App_Description}>An application by Gabriel Aldous</p>
 
             <ImgUploader onSelectImageHandler={setSelectedImage}/>
 

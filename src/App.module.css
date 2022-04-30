@@ -1,0 +1,64 @@
+.App  {
+	text-align: center;
+}
+
+.App_Title  {
+	margin: 0;
+	padding: 0;
+	padding-top: 1em;
+
+	font-size: 4.25em;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: var(--lightColor);
+}
+
+.App_Subtitle  {
+	margin: 0;
+	padding: 0;
+	padding-top: 0.75em;
+
+	font-size: min(5vh, 1.5em);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: var(--lightColor);
+}
+
+.App_Description  {
+	margin: 0;
+	padding: 0;
+	padding-top: 0.75em;
+
+	font-size: min(3vh, 1em);
+	font-weight: 600;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: var(--lightColor);
+
+	animation-delay: 1s;
+}
+
+.monospace  {
+	font-size: 1.25em;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+/*
+Fade in animation
+*/
+@keyframes fadeIn {
+	100% { opacity: 1; }
+}
+.App > *  {
+	opacity: 0;
+	animation: fadeIn 0.75s ease-in-out forwards;
+}
+.App > h1  {
+	animation-delay: 1s;
+}
+.App > h2  {
+	animation-delay: 1.5s;
+}
+.App > p  {
+	animation-delay: 2s;
+}
+.App > div  {
+	animation-delay: 2.5s;
+}
